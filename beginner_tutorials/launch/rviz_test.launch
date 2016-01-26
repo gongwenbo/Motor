@@ -1,0 +1,7 @@
+<launch>
+
+<node pkg="rviz" type="rviz" name="rviz"/>
+<arg name="map_file" default="$(find tars_slam)/maps/map.yaml"/>
+<node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+</launch>
